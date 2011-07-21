@@ -1,0 +1,17 @@
+@import url('reset.css');
+
+body {
+	background-color: #eee;
+	color: #333;
+}
+
+header#site-header {
+	width: 100%;
+	font-size: 1.5em;
+	background-color: #803;
+	color: #eee;
+}
+
+section#content {
+	padding: 1em;
+}

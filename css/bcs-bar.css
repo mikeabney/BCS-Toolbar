@@ -1,0 +1,147 @@
+#bcs-bar {
+	width: 100%;
+	background: #555;
+	background: -moz-linear-gradient(#555, #0a0a0a);
+	background: -o-linear-gradient(#555, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#0a0a0a));
+	background: -webkit-linear-gradient(#555, #0a0a0a);
+	-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	position: relative;
+}
+
+#bcs-bar ul {
+	white-space: nowrap;
+	list-style: none inside none;
+}
+
+#bcs-bar ul li {
+	position: relative;
+	display: inline-block;
+	color: #CCC;
+	top: 0;
+}
+
+#bcs-bar ul li.select {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+	display: none;
+}
+
+#bcs-bar ul li#right {
+	position: absolute;
+	padding-left: 2em;
+	float: right;
+	display: block;
+	right: 0;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0)), to(rgba(0,0,0,1.0)), color-stop(0.2, #000000));
+	background:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.0) 20%);
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#00000000', EndColorStr='#FF000000'); /* IE6–IE9 */
+}
+
+#bcs-bar ul li a, 
+ul#bcs-bar li a:visited, 
+ul#bcs-bar li a:active  {
+	display: inline-block;
+	width: 8em;
+	padding: 0.4em 0.7em;
+	border-right: solid 0.1em #333;
+	text-decoration: none;
+	color: #CCC;
+	white-space: pre-line;
+	text-align: center;
+	top: 0;
+}
+
+#bcs-bar ul li a:hover {
+	background: #444;
+	color: #FFF;
+	-webkit-box-shadow: inset 0px 5px 8px 0px #333;
+	-moz-box-shadow: inset 0px 5px 8px 0px #333;
+	box-shadow: inset 0px 5px 8px 0px #333;
+}
+
+#bcs-bar ul li a span {
+	z-index: 10000;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	padding: 0.6em;
+	background: #444;
+	color: #f1f1f1;
+	font-size: 0.85em;
+	line-height: 1.3em;
+	text-align: left;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow:rgba(0, 0, 0, 0.4) 0px 1px 2px;
+}
+
+#bcs-bar ul li#right a {
+	display: block;
+	float: right;
+	width: auto;
+	height: auto;
+	margin: 0.3em 0.8em 0 0;
+	font-size: 0.9em;
+	padding: 0.2em 0.5em;
+	color: #EEE;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: #777;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#555));
+	background: -moz-linear-gradient(top,  #888,  #555);
+}
+
+#bcs-bar ul li#right a:hover {
+	color:#FFF;
+	background: #555;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#333));
+	background: -moz-linear-gradient(top,  #999,  #444);
+}
+
+#bcs-bar ul li#right a:active {
+	color:#FFF;
+	color: #afafaf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+	background: -moz-linear-gradient(top,  #555,  #888);
+}
+
+/* Micro Clearfix from http://nicolasgallagher.com/micro-clearfix-hack/ */
+#bcs-bar ul li#right {
+	zoom: 1;
+}
+
+#bcs-bar ul li#right:before, #bcs-bar ul li#right:after{
+	content: "";
+	display: table;
+}
+#bcs-bar ul li#right:after {
+	clear: both;
+}
+
+@media screen and (max-width: 480px) {
+	#bcs-bar ul li.select {
+		display: inline-block;
+	}
+	#bcs-bar ul li.menu {
+		display: none;
+	}
+	#bcs-bar ul li a#bcs-more {
+		display: none;
+	}
+}
