@@ -2,34 +2,24 @@
 	/********* The BCS Community Sites *********/
 	var sites = [
 		{
-			'name' : 'Refresh BCS',
+			'name' : 'RefreshBCS',
 			'url' : 'http://refreshbcs.org',
-			'description' : 'This is what Refresh is all about, right here.'
+			'description' : 'A community of designers and developers working to refresh the creative, technical, and professional culture.'
 		},
 		{
 			'name' : 'AgileBCS',
 			'url' : 'http://agilebcs.org',
-			'description' : 'A local group that gets together to discuss software development in general and Agile and Lean practices and methods in particular.'
+			'description' : 'For developers and leaders interested in Agile methodologies and practices.'
 		},
 		{
-			'name' : 'Refresh BCS',
-			'url' : 'http://refreshbcs.org',
-			'description' : 'This is what Refresh is all about, right here.'
+			'name' : 'Aggieland .NET UG',
+			'url' : 'http://aggielanddnug.org',
+			'description' : 'Our mission is to bring developers together to learn more about software development and the Microsoft .NET platform.'
 		},
 		{
-			'name' : 'AgileBCS',
-			'url' : 'http://agilebcs.org',
-			'description' : 'A local group that gets together to discuss software development in general and Agile and Lean practices and methods in particular.'
-		},
-		{
-			'name' : 'Refresh BCS',
-			'url' : 'http://refreshbcs.org',
-			'description' : 'This is what Refresh is all about, right here.'
-		},
-		{
-			'name' : 'AgileBCS',
-			'url' : 'http://agilebcs.org',
-			'description' : 'A local group that gets together to discuss software development in general and Agile and Lean practices and methods in particular.'
+			'name' : 'Brazos Valley Adobe UG',
+			'url' : 'http://bvaug.org',
+			'description' : 'A group for discussing and learning about the latest Adobe products and tips for using them effectively.'
 		}
 	];
 
@@ -81,12 +71,12 @@
 		}
 		html += '</select></li>';
 		
-		html += '<li id="right"><a class="button" href="http://google.com">Calendar</a><a id="bcs-more" href="http://bcstech.org">More BCS Groups</a></li></ul></div>';
+		html += '<li id="right"><a class="button" href="http://www.google.com/calendar/embed?src=834sqblefa9b9vr7a24qtc9rkg%40group.calendar.google.com&ctz=America/Chicago">Calendar</a><a id="bcs-more" href="http://bccgroups.org">More BCS Groups</a></li></ul></div>';
 		return html;
 	}
 	
 	function insertBar() {
-		jQuery('head').append('<link rel="stylesheet" href="css/bcs-bar.css">');
+		jQuery('head').append('<link rel="stylesheet" href="http://mikeabney.com/bcs/css/bcs-bar.css">');
 		jQuery('body').prepend(generateHtml());
 		jQuery('#bcs-bar ul li a')
 			.hover(function() {
