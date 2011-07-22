@@ -66,6 +66,7 @@ ul#bcs-bar li a:active  {
 }
 
 #bcs-bar ul li a span {
+	display: none;
 	z-index: 10000;
 	position: absolute;
 	top: 2em;
@@ -130,6 +131,7 @@ ul#bcs-bar li a:active  {
 	content: "";
 	display: table;
 }
+
 #bcs-bar ul li#right:after {
 	clear: both;
 }
@@ -138,9 +140,11 @@ ul#bcs-bar li a:active  {
 	#bcs-bar ul li.select {
 		display: inline-block;
 	}
+	
 	#bcs-bar ul li.menu {
 		display: none;
 	}
+	
 	#bcs-bar ul li a#bcs-more {
 		display: none;
 	}

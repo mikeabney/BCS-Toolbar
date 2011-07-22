@@ -82,16 +82,18 @@ BCS_Bar = {
 		return html;
 	},
 	'insert_bar' : function() {
-		$('head').append('<link rel="stylesheet" href="css/bcs-bar.css">');
-		$('body').prepend(BCS_Bar.generateHtml());
-		$('#bcs-bar ul li a')
+		//jQuery('head').append('<link rel="stylesheet" href="css/bcs-bar.css">');
+		jQuery('body').prepend(BCS_Bar.generateHtml());
+		jQuery('#bcs-bar ul li a')
 			.hover(function() {
-				$(this).children().stop(true, true).slideToggle();
-			})
-			.children().slideToggle(0);
+				jQuery(this).children().stop(true, true).slideToggle();
+			});
+		jQuery('#bcs-bar ul li select').change(function() {
+			window.location = jQuery(this).find("option:selected").val();
+		});
 	}
 };
 
-$(window).load(function () {
+jQuery(window).load(function () {
 	BCS_Bar.insert_bar();
 });
