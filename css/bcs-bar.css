@@ -11,7 +11,8 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	position: relative;
-	overflow-x: hidden;
+/*	overflow-x: hidden;
+*/
 }
 
 #bcs-bar ul {
