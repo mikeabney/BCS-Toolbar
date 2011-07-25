@@ -49,8 +49,8 @@
 ul#bcs-bar li a:visited, 
 ul#bcs-bar li a:active  {
 	display: inline-block;
-	width: 8em;
-	padding: 0.4em 0.7em;
+/*	width: 8em; */
+	padding: 0.4em 27em;
 	border-right: solid 0.1em #333;
 	text-decoration: none;
 	color: #CCC;
